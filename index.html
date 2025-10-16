@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ryan Rogers • Portfolio</title>
+  <meta name="description" content="Portfolio of a Computer Science student focusing on embedded systems, systems programming, and full-stack projects." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="backdrop"></div>
+
+  <header>
+    <nav class="nav">
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
+      </button>
+      <div class="brand">Ryan Rogers</div>
+      <div class="spacer"></div>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-card">
+      <div class="kicker">Embedded-Focused • Security+ Certified • Practical Engineering Solutions</div>
+      <h1>Computer Science Student<br/>Building software with purpose and precision</h1>
+      <p class="muted" style="max-width: 70ch;">
+        Auburn Computer Science student (May 2026). Former refinery operator and API-570 inspector turned software builder. I bring systems thinking, complex problem-solving, and hands-on prototyping to embedded and data-driven projects. Focused on embedded software (C/C++), systems, and practical full-stack. CompTIA Security+ (CE).
+      </p>
+      <div class="divider" aria-hidden="true"></div>
+      <h3 class="subsection-title" style="margin:0 0 8px;">What I’m working on now</h3>
+      <div class="badgelist">
+        <div class="badge">
+          <div class="eyebrow">Echo 2.0</div>
+          <div>Raspberry Pi Zero driven re-imagining of the Echo project. It will become an ultrasonic radar scanner,
+              with a desktop application to process and visualize signal data in real-time. <span class="tag">Embedded System Design</span> <span class="tag">Data Processing</span><span class="tag">Robotics</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2 class="section-title">About</h2>
+
+    <div class="grid">
+      <div class="card span-6">
+        <div class="eyebrow">Education</div>
+        <p><strong>Auburn University</strong><br/>B.S. in Computer Science, Expected May 2026</p>
+        <p><strong>University of South Alabama</strong><br/>B.A. in History, Minor in German Language, 2006 - 2011</p>
+      </div>
+
+      <div class="card span-6">
+        <div class="eyebrow">Skills</div>
+        <p>Java, C, C++, JavaScript, PHP, HTML/CSS, ARM Assembly, SQL</p>
+        <p class="muted">Tools: Linux, Docker, Git/GitHub, VS Code, IntelliJ, jGRASP</p>
+      </div>
+
+      <div class="card span-12">
+        <div class="eyebrow">Experience</div>
+        <p><strong>SCI Technology, Inc. — Huntsville, AL</strong><br/>Software Engineering Intern (Spring 2025)</p>
+        <p class="muted">Designed embedded software architectures for FLRAA with SoC integration; produced avionics component designs (hold-up circuit, EEPROM storage) and a UART-over-I²C driver; applied aerospace coding standards and contributed across the SDLC.</p>
+
+        <p><strong>Chevron Corporation — Pascagoula, MS</strong><br/>Operator (Sep 2015 – Mar 2023)</p>
+        <p class="muted">Controlled and optimized refinery units via Yokogawa DCS; built real-time analytics dashboards; authored technical reports; mentored staff in hydrotreating, hydrocracking, and hydrogen reforming.</p>
+
+        <p><strong>American Inspection Services — Pascagoula, MS</strong><br/>API-570 Inspector (Aug 2011 – Sep 2015)</p>
+        <p class="muted">Performed API-570 inspections; maintained database of 700+ piping systems; coordinated NDE (X-Ray, UT, Phased Array); delivered technical recommendations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="grid">
+      <article class="card span-6">
+        <div class="eyebrow">Web • 3D Viz</div>
+        <h3>Jet Trip Tracker</h3>
+        <p class="muted">Full-stack flight logger and 3D globe visualization (PHP, JS, Globe.gl/Three.js).</p>
+        <p><a class="btn" href="https://github.com/Ryanrzr0091/Projects/Jet Trip Tracker" target="_blank">View Repo</a></p>
+      </article>
+
+      <article class="card span-6">
+        <div class="eyebrow">Systems / Data</div>
+        <h3>Project Neptune — Fleet Readiness</h3>
+        <p class="muted">Web app simulating a naval readiness console (PHP, MySQL, Ajax/JSON). Normalized schema + PHP API → live status rings and asset panels for carriers, destroyers, submarines, and aircraft.</p>
+        <p><a class="btn" href="https://github.com/Ryanrzr0091/Projects/Project Neptune" target="_blank">View Repo</a></p>
+      </article>
+
+      <article class="card span-6">
+        <div class="eyebrow">Embedded</div>
+        <h3>Echo — ESP32 Robot</h3>
+        <p class="muted">Low-cost autonomous car using ESP32 + PCA9685 motor HAT + dual HC-SR04 sensors. C/C++ collision-avoidance with I²C motor control and modular design for upgrades.</p>
+        <p><a class="btn" href="https://github.com/Ryanrzr0091/Projects/Echo" target="_blank">View Repo</a></p>
+      </article>
+
+      <article class="card span-6">
+        <div class="eyebrow">Desktop • Java</div>
+        <h3>Finance Tracker Application</h3>
+        <p class="muted">Light-weight, persistent desktop app for tracking income and expenses. Built with <strong>Java, FXML, and CSS</strong>, emphasizing clean UI and real-time data handling.</p>
+        <ul class="muted" style="margin:0 0 10px 1em;">
+          <li><strong>Add Income</strong>: categorize and see real-time totals.</li>
+          <li><strong>Add Expense</strong>: enter amount + category with instant summary updates.</li>
+          <li><strong>View Summary</strong>: total income, expenses, and balance.</li>
+          <li><strong>Transaction History</strong>: table of all entries.</li>
+          <li><strong>Delete Transactions</strong>: remove any entry.</li>
+          <li><strong>Save & Load Data</strong>: persist data across sessions.</li>
+        </ul>
+        <p><a class="btn" href="https://github.com/Ryanrzr0091/Projects/Personal Finance Tracker" target="_blank" rel="noopener">View Repo</a></p>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="card">
+      <p class="muted">Best ways to reach me.</p>
+      <p>
+        <a class="btn" href="mailto:rzr0091@auburn.edu">rzr0091@auburn.edu</a>
+        <a class="btn" href="https://github.com/ryanrzr0091/Projects" target="_blank">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/ryanrogers0091/" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+  <footer>
+    <div>© <span id="year"></span> Ryan Rogers • Built for GitHub Pages</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
